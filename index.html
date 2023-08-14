@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <title>s2 About</title>
+    <style type="text/css">
+      *{
+      border:0;
+      padding:0;
+      }
+      
+      body{
+      margin:0;
+      }
+      
+      hr{
+      border-top:1.2vw dotted lightgrey;
+      width:10%;
+      margin:7.5% auto;
+      }
+      
+      .navbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      height:60px;
+      padding:2.5% 5%;
+      padding-right:10%;
+      background-color:#a4f4fb;
+      }
+      
+      .logo{
+      text-decoration:none;
+      color:#239a9e;
+      font-size:5vw;
+      font-family: 'Gochi Hand', cursive;
+      }
+      
+      .navbar ul{
+      display:flex;
+      list-style:none;
+      }
+      
+      .list li{
+      font-family: 'Roboto Mono', monospace;
+      margin:3%;
+      }
+      
+      .list li a{
+      text-decoration:none;
+      color:white;
+      font-size:3vw;
+      }
+      
+      .h1y{
+      margin:0;
+      padding-top:12%;
+      font-family: 'Sacramento', cursive;
+      font-size:10vw;
+      }
+      
+      
+      .blk1{
+      color:#33c7d6;
+      text-align:center;
+      padding:5%;
+      background-image: linear-gradient(to bottom,#a6f4fb,white);
+      }
+      
+      .cld1{
+      width:20%;
+      position:absolute;
+      right:10%;
+      }
+      
+      .cld2{
+      width:15%;
+      position:relative;
+      right:40%;
+      }
+      
+      .mntn{
+      width:100%;
+      }
+      
+      .pone{
+      margin:0;
+      font-family: 'Roboto Mono', monospace;
+      font-size:3.5vw;
+      margin:0 auto 0 auto;
+      }
+      
+      .parent{
+      background-image:linear-gradient(to bottom,white,#a6f4fb);
+      text-align:center;
+      }
+      
+      .child0{
+      text-align:center;
+      width:50%;
+      margin:0 auto;
+      }
+      
+      .child0 img{
+      width:13vw;
+      }
+      
+      .child0 h4{
+      margin:.75vw auto;
+      font-size:4vw;
+      color:#33c7d6;
+      font-family: 'Sacramento', cursive;
+      }
+      
+      .child0 p{
+      font-size:2vw;
+      line-height:2.75vw;
+      }
+      
+      .parent h2{
+      text-align:center;
+      color:#33c7d6;
+      font-family: 'Sacramento', cursive;
+      font-size:5vw;
+      margin-top:8%;
+      }
+      
+      .child1{
+      margin:10% 3vw 3vw 3vw;
+      }
+      
+      .child1 img{
+      width:25%;
+      margin-left:12.5%;
+      margin-top:1.5vw;
+      margin-right:3vw;
+      border-radius:40%;
+      float:left;
+      }
+      
+      .child1 div{
+      width:60%;
+      text-align:center;
+      margin:0 auto 0 auto;
+      font-size:1.25vw;
+      line-height:1.8vw;
+      }
+      
+      .child1 p{
+      margin:0;
+      margin-top:1.5vw;
+      }
+      
+      .child1 h4{
+      margin:0;
+      font-size:2vw;
+      font-family: 'Roboto Mono', monospace;
+      color:#33c7d6;
+      }
+      
+      .child2{
+      margin:10% 3vw 3vw 3vw;
+      }
+      
+      .child2 img{
+      width:25%;
+      margin-left:3vw;
+      margin-top:1.5vw;
+      margin-right:17.5%;
+      border-radius:40%;
+      float:right;
+      }
+      
+      .child2 div{
+      width:60%;
+      text-align:center;
+      margin:0 12.5%;
+      font-size:1.25vw;
+      line-height:1.8vw;
+      }
+      
+      .child2 p{
+      margin:0;
+      margin-top:1.5vw;
+      }
+      
+      .child2 h4{
+      margin:0;
+      font-family: 'Roboto Mono', monospace;
+      font-size:2vw;
+      color:#33c7d6;
+      }
+      
+      .bttn {
+      background: #11cdd4;
+      background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+      background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+      background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+      background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+      background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+      -webkit-border-radius: 8;
+      -moz-border-radius: 8;
+      border-radius: 8px;
+      font-family: 'Montserrat', sans-serif;
+      color: #ffffff;
+      font-size: 2vw;
+      padding: 1vw 2vw;
+      text-decoration: none;
+      }
+      
+      .bttn:hover {
+      background: #6ddcde;
+      background-image: -webkit-linear-gradient(top, #6ddcde, #2bc4ad);
+      background-image: -moz-linear-gradient(top, #6ddcde, #2bc4ad);
+      background-image: -ms-linear-gradient(top, #6ddcde, #2bc4ad);
+      background-image: -o-linear-gradient(top, #6ddcde, #2bc4ad);
+      background-image: linear-gradient(to bottom, #6ddcde , #2bc4ad);
+      text-decoration: none;
+      }
+      
+      .btc{
+      margin-bottom:0;
+      margin-top:5%;
+      padding-top:2.5%;
+      background-color:#33c7d6;
+      }
+      
+      .btc a{
+      text-decoration:none;
+      color:#a6f4fb;
+      font-size:2.5vw;
+      margin:0 2%;
+      }
+      
+      .btc p{
+      color:white;
+      font-size:.75vw;
+      margin-bottom:0;
+      padding-bottom:1.5%;
+      padding-top:1%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="logo" href="#" >yashraj</a>
+      <ul class="list">
+        <li><a href="#about" >About</a></li>
+        <li><a href="#skill" >Skills</a></li>
+        <li><a href="#contact" >Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="blk1">
+      <img class="cld1" src="./Cloud1.png" alt="cloud1">
+      <h1 class="h1y">I'm Yash</h1>
+      <p class="pone">a programmer.</p>
+      <img class="cld2" src="./Cloud1.png" alt="cloud2">
+      <img class="mntn" src="./Mountain.png" alt="mountain">
+    </div>
+    
+    <div class="parent">
+      <div class="child0" id="about">
+        <img src="./Yash.png" alt="yash">
+        <h4>H i.</h4>
+        <p>Im a developer/programmer based in Indore, India. I have a passion for web design and learining how to create for web and mobile devices.</p>
+      </div>
+      <hr>
+      
+      <h2 id="skill">My skills</h2>
+      
+      <div class="child1">
+        <img src="./Hob.gif" alt="hob1">
+        <div>
+          <h4>Design and Development</h4>
+          <p>I started learning to code when I was 18 years old because I took software engineering as my career. Over the time, I have gained a wealtj of experience designing and developing mobile and web applications.</p>
+        </div>
+      </div>
+      
+      <div class="child2">
+        <img src="./Idea.jpg" alt="idea">
+        <div>
+          <h4>Problem Solving</h4>
+          <p>Problem-solving is a complex skill. It involves critical thinking, decision-making, creativity, and information processing. Effective problem-solvers use a systematic approach that allows them to break down difficult problems into smaller, more manageable parts.</p>
+        </div>
+      </div>
+      <hr>
+      
+      <h2 id="contact">Contact Me</h2>
+      
+      <div class="child0">
+        <h4 style="font-family: 'Roboto Mono', monospace;font-size:2vw;">If you want to know more</h4>
+        <p style="margin:5%;font-size:1.25vw;">Let's meet and talk, We can code while we talk about it.</p>
+        <a class="bttn" href="mailto:yashrajtilwani73099@gmail.com" >Contact me</a>
+      </div>
+      
+      <div class="btc">
+      <a href="https://twitter.com/TilwaniYashraj?t=zPsCvq3pUc0zbOSixUKy0w&s=09" >Twitter</a>
+      <a href="https://www.linkedin.com/in/yashraj-tilwani-7b8005251" >Linkedin</a>
+      <a href="https://instagram.com/yashrajtilwani?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" >Instagram</a>
+      <p class="copyright">© 2023 Yash @ landing page</p>
+      </div>
+    </div>  
+  </body>
+</html>
